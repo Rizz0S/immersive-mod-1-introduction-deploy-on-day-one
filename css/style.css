@@ -1502,15 +1502,12 @@ h3#comments {
 
 .services-wrap {
     display: block;
-    float: left;
     margin-left: -4%;
     margin-bottom: -2%;
     max-width: 1020px;
 }
 
 .services-title {
-    float: left;
-    width: 75%;
     padding-top: 11px;
 }
 
@@ -1549,6 +1546,7 @@ h3#comments {
     font-size: 13px;
     border-top: dotted 1px #e6e6e6;
     padding-top: 8px;
+    text-align: center;
 }
 
 .services ul{
@@ -1559,15 +1557,11 @@ h3#comments {
 }
 
 .services ul li{
-  border-bottom: dotted 1px #e6e6e6;
   padding: 3px 0 4px 0;
+  text-align: center;
 }
 
-.services h4{
-  font-size: 14px;
-  line-height: 0;
-  text-decoration: underline
-}
+
 .services:hover .service-icon {
     background: #fff666;
     -webkit-transition: .1s ease-in;
@@ -2890,20 +2884,29 @@ input.hs-button.primary.large{
 }
 
 .student_pic {
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  width: 140px;
-  height: 140px;
-  top: -212px;
-  left: 41.07%;
-  border: 2px solid white;
-  margin-top: 205px;
+    position: relative;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    left: -20px
 }
 
+.student_pic_wrapper {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    bottom: -70px;
+    left: 41.07%;
+    border: 2px solid white;
+    margin-top: 205px;
+    overflow: hidden;
+    position: absolute;
+}
 
 .page-title, .top-page-title {
-  /*background: url(../img/plaza_espana.jpg) no-repeat top center;*/
+  /*background: url(../img/bigcat.jpg) no-repeat top center;*/
   margin-bottom: 0;
   padding: 0;
   height: 275px;
@@ -2920,6 +2923,7 @@ input.hs-button.primary.large{
   background-size: 100% 100%;
   margin-bottom: 100px;
   text-align: center;
+  position: relative;
 }
 
 .ib-social-icons {
@@ -3025,7 +3029,6 @@ input.hs-button.primary.large{
     line-height: 20px;
     margin-bottom: 0;
     text-align: center;
-    width: 295px;
 }
 
 .services first-child {
